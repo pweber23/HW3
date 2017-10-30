@@ -46,7 +46,7 @@ public class Main implements Comparable {
             System.out.println("The key was not found");
         }
         else{
-            System.out.println(numberReturned);
+            System.out.println(ans);
         }
 
     }
