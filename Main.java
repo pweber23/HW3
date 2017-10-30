@@ -58,12 +58,12 @@ public class Main implements Comparable {
     
     
     public static int binSearch(Comparable[] aList,Comparable key){
-        int size = aList.length;
-        int low = 0;
-        int high = (size -1);
+        int len = aList.length;
+        int beg = 0;
+        int end = (len -1);
 
-        while (low <= high){
-            int mid = ((low + high) / 2);
+        while (beg <= end){
+            int mid = ((beg + end) / 2);
 
             if(aList[mid].compareTo(key) == 0){
                 return mid;
@@ -72,7 +72,7 @@ public class Main implements Comparable {
                 low = mid + 1;
             }
             else{
-                high = mid - 1;
+                end = mid - 1;
             }
         }
 
