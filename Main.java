@@ -3,7 +3,7 @@ package PaulWeber;
 import org.apache.commons.cli.*;
 
 public class Main implements Comparable {
-    private static int numberReturned;
+    
     public static void main(String[] args){
         CommandLineParser parser = new DefaultParser();
         Options options = new Options();
